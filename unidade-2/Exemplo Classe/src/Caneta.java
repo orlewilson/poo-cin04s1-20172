@@ -10,15 +10,23 @@
 
 public class Caneta {
 
-	// Atributos
-	String cor;
-	String marca;
-	String material;
-	String tipo;
-	double preco;
-	double ponta;
-	
-	// Métodos para acessar os atributos
+	// Atributos (sem encapsulamento)
+//	String cor;
+//	String marca;
+//	String material;
+//	String tipo;
+//	double preco;
+//	double ponta;
+
+	// Atributos (com encapsulamento)
+	private String cor;
+	private String marca;
+	private String material;
+	private String tipo;
+	private double preco;
+	private double ponta;
+
+	// Métodos para acessar os atributos (encapsulamento)
 	public void setCor(String cor){
 		this.cor = cor;
 	}
@@ -26,15 +34,44 @@ public class Caneta {
 	public String getCor(){
 		return this.cor;
 	}
+	
+	public void setMarca(String marca){
+		this.marca = marca;
+	}
+	
+	public String getMarca(){
+		return this.marca;
+	}
+	
+	public void setMaterial(String material){
+		this.material = material;
+	}
+	
+	public String getMaterial(){
+		return this.material;
+	}
+	
+	public void setTipo(String tipo){
+		this.tipo = tipo;
+	}
+	
+	public String getTipo(){
+		return this.tipo;
+	}
+
+	public void setPreco(double preco){
+		this.preco = preco;
+	}
+	
+	public double getPreco(){
+		return this.preco;
+	}
+	
+	public void setPonta(double ponta){
+		this.ponta = ponta;
+	}
+	
+	public double getPonta(){
+		return this.ponta;
+	}	
 }
-
-
-
-
-
-
-
-
-
-
-

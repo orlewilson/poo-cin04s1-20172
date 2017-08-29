@@ -16,21 +16,36 @@ public class Principal {
 		Caneta bic = new Caneta();
 		
 		// Atribuindo valores (sem encapsulamento)
-		bic.cor = "vermelha";
-		bic.marca = "BIC";
-		bic.material = "plástico";
-		bic.tipo = "esferográfica";
-		bic.ponta = 0.7;
-		bic.preco = 3.25;
+//		bic.cor = "vermelha";
+//		bic.marca = "BIC";
+//		bic.material = "plástico";
+//		bic.tipo = "esferográfica";
+//		bic.ponta = 0.7;
+//		bic.preco = 3.25;
+		
+		// Atribuindo valores (com encapsulamento)
+		bic.setCor("vermelha");
+		bic.setMarca("BIC");
+		bic.setMaterial("plástico");
+		bic.setTipo("esferográfica");
+		bic.setPonta(0.7);
+		bic.setPreco(3.25);
 		
 		// Imprimir conteúdos (sem encapsulamento)
-		System.out.println("Cor: " + bic.cor);
-		System.out.println("Marca: " + bic.marca);
-		System.out.println("Material: " + bic.material);
-		System.out.println("Tipo: " + bic.tipo);
-		System.out.println("Ponta: " + bic.ponta);
-		System.out.println("Preço: " + bic.preco);
+//		System.out.println("Cor: " + bic.cor);
+//		System.out.println("Marca: " + bic.marca);
+//		System.out.println("Material: " + bic.material);
+//		System.out.println("Tipo: " + bic.tipo);
+//		System.out.println("Ponta: " + bic.ponta);
+//		System.out.println("Preço: " + bic.preco);
 		
+		// Imprimir conteúdos (com encapsulamento)
+		System.out.println("Cor: " + bic.getCor());
+		System.out.println("Marca: " + bic.getMarca());
+		System.out.println("Material: " + bic.getMaterial());
+		System.out.println("Tipo: " + bic.getTipo());
+		System.out.println("Ponta: " + bic.getPonta());
+		System.out.println("Preço: " + bic.getPreco());
 		
 	}
 }
