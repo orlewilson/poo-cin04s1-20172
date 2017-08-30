@@ -26,6 +26,29 @@ public class Caneta {
 	private double preco;
 	private double ponta;
 
+	// Construtor (sem argumentos)
+	public Caneta(){
+		this.cor = "";
+		this.marca = "";
+		this.material = "";
+		this.tipo = "";
+		this.preco = 0.0;
+		this.ponta = 0.0;
+	}
+	
+	
+	// Construtor (com argumentos)
+	public Caneta(String cor, String marca,
+			String material, String tipo, 
+			double preco, double ponta){
+		this.cor = cor;
+		this.marca = marca;
+		this.material = material;
+		this.tipo = tipo;
+		this.preco = preco;
+		this.ponta = ponta;
+	}
+	
 	// Métodos para acessar os atributos (encapsulamento)
 	public void setCor(String cor){
 		this.cor = cor;

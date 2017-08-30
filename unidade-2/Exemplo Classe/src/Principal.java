@@ -12,8 +12,12 @@ public class Principal {
 	// executar o projeto
 	public static void main(String[] args) {
 		
-		// criando objeto
-		Caneta bic = new Caneta();
+		// criando objeto (com construtor sem argumentos)
+//		Caneta bic = new Caneta();
+		
+		// criando objeto (com construtor com argumentos)
+		Caneta bic = new Caneta("vermelha","BIC", "plástico",
+				"esferográfica",0.7,3.25);
 		
 		// Atribuindo valores (sem encapsulamento)
 //		bic.cor = "vermelha";
@@ -49,8 +53,3 @@ public class Principal {
 		
 	}
 }
-
-
-
-
-
