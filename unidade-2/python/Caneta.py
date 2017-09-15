@@ -33,6 +33,28 @@ class Caneta:
 	__preco = None
 	__ponta = None
 
+	# construtor sem argumentos
+	#def __init__(self):
+	#	self.__cor = ""
+	#	self.__marca = ""
+	#	self.__material = ""
+	#	self.__tipo = ""
+	#	self.__preco = 0.0
+	#	self.__ponta = 0.0
+
+	# construtor com argumentos
+	def __init__(self,
+		cor = "", marca = "", 
+		material = "", tipo = "", 
+		preco = 0.0, ponta = 0.0):
+		
+		self.__cor = cor
+		self.__marca = marca
+		self.__material = material
+		self.__tipo = tipo
+		self.__preco = preco
+		self.__ponta = ponta
+
 	# Métodos para garantir o encapsulamento dos
 	# atributos
 	def setCor(self, cor):
@@ -70,3 +92,18 @@ class Caneta:
 
 	def getPonta(self):
 		return self.__ponta
+
+	# novos métodos
+	def imprimir(self):
+		print("Cor: " + 
+			self.getCor())
+		print("Marca: " + 
+			self.getMarca())
+		print("Material: " + 
+			self.getMaterial())
+		print("Tipo: " + 
+			self.getTipo())
+		print("Preço: " + 
+			str(self.getPreco()))
+		print("Ponta: " + 
+			str(self.getPonta()))

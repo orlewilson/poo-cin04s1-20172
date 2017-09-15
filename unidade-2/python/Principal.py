@@ -18,6 +18,11 @@ from Caneta import Caneta
 # criando objeto do tipo Caneta
 bic = Caneta()
 
+
+
+
+
+
 # atrituindo valores (sem encapsulamento)
 #bic.cor = "vermelha"
 #bic.marca = "BIC"
@@ -43,9 +48,16 @@ bic.setPonta(0.7)
 #print("Ponta: " + str(bic.ponta))
 
 # mostrando valores (com encapsulamento)
-print("Cor: " + bic.getCor())
-print("Marca: " + bic.getMarca())
-print("Material: " + bic.getMaterial())
-print("Tipo: " + bic.getTipo())
-print("Preço: " + str(bic.getPreco()))
-print("Ponta: " + str(bic.getPonta()))
+#print("Cor: " + bic.getCor())
+#print("Marca: " + bic.getMarca())
+#print("Material: " + bic.getMaterial())
+#print("Tipo: " + bic.getTipo())
+#print("Preço: " + str(bic.getPreco()))
+#print("Ponta: " + str(bic.getPonta()))
+
+# mostra dados do objeto do 
+# tipo Caneta
+bic.imprimir()
+
+
+
