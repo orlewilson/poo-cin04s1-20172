@@ -2,12 +2,12 @@
  *	Disciplina: Programação Orientada a Objetos 
  *  Professor: 	Orlewilson B. Maia
  *  Turma:		CIN04S1
- *  Data:		27/08/17
+ *  Data:		27/09/17
  *  Autor:		Orlewilson B. Maia
  *  Descrição:	Modelo para representar uma pessoa
  * 	
  */
-public class Pessoa {
+public abstract class Pessoa {
 
 	// atributos
 	private String nome;

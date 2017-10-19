@@ -7,7 +7,7 @@
  *  Descrição:	Modelo para representar um aluno
  * 	
  */
-public class Aluno {
+public class Aluno extends Pessoa{
 
 	// atributos
 	private String curso;
@@ -18,6 +18,9 @@ public class Aluno {
 
 	// construtor sem argumentos
 	public Aluno() {
+		
+		super();
+		
 		this.curso = "";
 		this.coeficiente = 0.0;
 		this.periodo = 0;
@@ -26,7 +29,17 @@ public class Aluno {
 	}
 
 	// construtor com argumentos
-	public Aluno(String curso, double coeficiente, int periodo, String modalidade, boolean bolsista) {
+	public Aluno(String nome, String matricula, 
+			char sexo, String dataNascimento, 
+			String disciplinas,
+			
+			String curso, 
+			double coeficiente, int periodo, 
+			String modalidade, boolean bolsista) {
+		
+		super(nome, matricula, sexo, 
+				dataNascimento, disciplinas);
+
 		this.curso = curso;
 		this.coeficiente = coeficiente;
 		this.periodo = periodo;
