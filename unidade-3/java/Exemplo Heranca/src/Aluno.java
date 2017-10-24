@@ -87,4 +87,44 @@ public class Aluno extends Pessoa{
 	public void setBolsista(boolean bolsista) {
 		this.bolsista = bolsista;
 	}
+	
+	
+	// mostrar dados de Aluno
+	public void mostrarDados() {
+		// 1a Forma
+//		System.out.println("Nome: " + getNome());
+//		System.out.println("Matrícula: " + getMatricula());
+//		System.out.println("Sexo: " + getSexo());
+//		System.out.println("Data Nascimento: " 
+//				+ getDataNascimento());
+//		System.out.println("Disciplinas: " 
+//				+ getDisciplinas());
+		// 2a Forma
+		super.mostrarDados();
+		
+		System.out.println("Curso: " + getCurso());
+		System.out.println("Coeficiente: " 
+				+ getCoeficiente());
+		System.out.println("Periodo: " + getPeriodo());
+		System.out.println("Modalidade: " 
+				+ getModalidade());
+		
+		if (getBolsista()) {
+			System.out.println("Bolsista: Sim");
+		} else {
+			System.out.println("Bolsista: Não");
+		}
+	}
+
+		
 }
+
+
+
+
+
+
+
+
+
+

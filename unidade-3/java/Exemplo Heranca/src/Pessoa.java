@@ -74,4 +74,16 @@ public abstract class Pessoa {
 	public void setDisciplinas(String disciplinas) {
 		this.disciplinas = disciplinas;
 	}
+	
+	// mostrar dados de Pessoa
+	public void mostrarDados() {
+		
+		System.out.println("Nome: " + getNome());
+		System.out.println("Matrícula: " + getMatricula());
+		System.out.println("Sexo: " + getSexo());
+		System.out.println("Data Nascimento: " 
+				+ getDataNascimento());
+		System.out.println("Disciplinas: " 
+				+ getDisciplinas());
+	}
 }

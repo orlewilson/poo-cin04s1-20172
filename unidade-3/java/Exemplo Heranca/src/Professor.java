@@ -83,6 +83,14 @@ public class Professor extends Pessoa{
 	public void setFormacao(String formacao) {
 		this.formacao = formacao;
 	}
+	
+	public double getSalario() {
+		return this.salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
 
 	public String getFaculdades() {
 		return this.faculdades;
@@ -105,6 +113,42 @@ public class Professor extends Pessoa{
 	}
 
 	public void setNivelCrueldade(int nivelCrueldade) {
-		this.nivelCrueldade = nivelCrueldade;
+		
+		if(nivelCrueldade > 0 || nivelCrueldade < 6) {
+			this.nivelCrueldade = nivelCrueldade;
+		}
 	}
+	
+	// mostrar dados de Professor
+		public void mostrarDados() {
+			// 1a Forma
+//			System.out.println("Nome: " + getNome());
+//			System.out.println("Matrícula: " + getMatricula());
+//			System.out.println("Sexo: " + getSexo());
+//			System.out.println("Data Nascimento: " 
+//					+ getDataNascimento());
+//			System.out.println("Disciplinas: " 
+//					+ getDisciplinas());
+			// 2a Forma
+			super.mostrarDados();
+
+			System.out.println("Formação: " + getFormacao());
+			System.out.println("Salário: " 
+					+ getSalario());
+			System.out.println("Faculdades: " + getFaculdades());
+			System.out.println("Carga Horária: " 
+					+ getCargaHoraria());
+			
+			if (getNivelCrueldade() == 1) {
+				System.out.println("Nível Crueldade: gasparzinho");
+			} else if (getNivelCrueldade() == 2) { 
+				System.out.println("Nível Crueldade: shrek");
+			}else if (getNivelCrueldade() == 3) { 
+				System.out.println("Nível Crueldade: cruela");
+			}else if (getNivelCrueldade() == 4) { 
+				System.out.println("Nível Crueldade: oscar");
+			}else if (getNivelCrueldade() == 5) { 
+				System.out.println("Nível Crueldade: malévola");
+			}
+		}
 }
